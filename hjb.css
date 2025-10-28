@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #333;
+}
+
+.calculator-screen {
+    width: 95%;
+    height: 60px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 2.5rem;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+button {
+    height: 60px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e68a00;
+}
+
+.all-clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.all-clear:hover {
+    background-color: #da190b;
+}
+
+.equal-sign {
+    /* Make the '=' button span two columns */
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+    height: auto; /* Allow grid area to define height */
+}
